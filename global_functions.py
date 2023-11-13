@@ -1,7 +1,4 @@
-import pandas as pd
-import numpy as np
-
-def filter_cols(df, missing_threshold=0.9):
+def filter_cols(pd, df, missing_threshold=0.9):
     """
     Filters out columns from a DataFrame based on:
     1. Missing values exceeding the given threshold, or
@@ -53,7 +50,7 @@ def filter_cols(df, missing_threshold=0.9):
 
 # ----------------------------------------------------------------------------------------
 
-def format_number(x):
+def format_number(pd, x):
     """
     If x is a number and not NaN, format it to two decimal places or as an integer if it's whole.
     If x is NaN, return it unchanged.
@@ -67,7 +64,7 @@ def format_number(x):
 
 # ----------------------------------------------------------------------------------------
 
-def descriptive_analysis(df):
+def descriptive_analysis(pd, df):
     """
     Perform a descriptive analysis on a pandas DataFrame, handling both numeric and non-numeric data.
     Formats numeric data with two decimal places or as integers and adds headers for numeric and non-numeric data.
