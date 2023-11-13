@@ -1,3 +1,6 @@
+import pandas as pd
+import numpy as np
+
 def filter_cols(df, missing_threshold=0.9):
     """
     Filters out columns from a DataFrame based on:
