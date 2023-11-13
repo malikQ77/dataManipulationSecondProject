@@ -88,3 +88,7 @@ def descriptive_analysis(df):
     # Combine the statistics
     combined_stats = pd.concat([numeric_stats, non_numeric_stats], axis=1)
     return combined_stats.T
+
+
+if __name__ == "__main__":
+    print("getting global_functions script successfully")
